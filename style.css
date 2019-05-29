@@ -1,0 +1,28 @@
+
+.box 
+{
+    padding: 70px ;
+    margin: 80px auto ;
+}
+#class1 
+{
+    border-radius: 10px ;
+}
+ #first 
+{
+    background-image: url("Untitled.png") ;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px ;
+}
+ #second 
+ {
+    background-image: url("Capture.PNG") ;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px ;
+    
+ }
+ 
