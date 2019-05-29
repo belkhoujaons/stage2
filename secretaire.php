@@ -27,6 +27,7 @@ $result =$base->query($req);
 <tbody>
 <?php
 while($donne=$result->fetchObject()){
+    $id=$dem->id_demande ; 
 ?>
 <tr>
     <td><?php 
@@ -37,8 +38,8 @@ while($donne=$result->fetchObject()){
             echo "$fname "; ?></td>
     <td><?php echo $date=$donne->date_d;
             ?></td>
-    <td><input type="button" value="valider" class="btn btn-success"></td>
-    <td><input type="button" value="supp" class="btn btn-danger"></td>
+    <td><a href="ajout.php?id=<?php echo $id; ?>">" <button class="btn btn-success">valider </button></a></td>
+    <td><a href="supp.php?id=<?php echo $id; ?>">" <button class="btn btn-danger">supp </button></a></td>
 </tr>
    
 <?php   
