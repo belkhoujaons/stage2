@@ -38,7 +38,7 @@ while($donne=$result->fetchObject()){
     <td><?php echo $date=$donne->date_d;
             ?></td>
     <td><input type="button" value="valider" class="btn btn-success"></td>
-    <td><button onclick="myFunction()" class="btn btn-danger" >supp</button></td>
+    <td><input type="button" value="supp" class="btn btn-danger"></td>
 </tr>
    
 <?php   
@@ -47,23 +47,5 @@ while($donne=$result->fetchObject()){
 </tbody>
 </table>
 
-<script>
-    function myFunction() {
-    <?php $req="DELETE * FROM demande where id =='$id' ";
-    $resp=$base->exec($req);
-    if($resp==1)
-    {
-        echo"données insérées avec succees";
-        
-        exit;
-    }
-    else
-    {
-        echo "erreur dinsertion: verifier la req ou le fichier ";  
-    }
-    
-    ?>
-    
-    </script>
 </body>
 </html>
