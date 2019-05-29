@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>demande rendez-vous</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <form method="POST" action="../stage d'été/demande.php">
+            <table id="class1" class="table table-borderless table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">nom</th>
+                        <td><input type="text" placeholder="donner votre nom" name="nom" size="50px"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">prenom</th>
+                        <td><input type="text" placeholder="donner votre prenom" name="prenom" size="50px"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">date</th>
+                        <td><input type="date" placeholder="jjm/aa" name="d" size="50px"></td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row"></th>
+                        <td colspan="2"><input type="submit" value="valider" class="btn btn-light"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
