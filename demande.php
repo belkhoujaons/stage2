@@ -12,7 +12,7 @@ if(isset($_POST["nom"])&&isset($_POST["prenom"])&&isset($_POST["d"]))
     $d=$_POST["d"];
     
     
-    $req="INSERT INTO demande(fname,lname,date_d) VALUES ('$nom','$prenom','$d')";
+    $req="INSERT INTO demande ( date_d,fname,lname) VALUES ('$d','$nom','$prenom')";
     $resp=$base->exec($req);
     if($resp==1)
     {
